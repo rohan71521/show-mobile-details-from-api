@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone details From API</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+<div class="text-center pt-10">
+  <input id="input" type="text" placeholder="Search Phone " class=" text-secondary input-secondary input input-bordered w-full max-w-xs" />
+  <button  id="searchBtn" onclick="searchPhone ()" class="btn btn-secondary">Search</button>
+</div> 
+<div id="spinner" class=" text-center items-center py-80  hidden">
+  <span class="loading loading-spinner loading-md"></span>
+</div>
+<section id="section" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 
+lg:p-5 max-w-7xl mx-auto">
+</section>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
